@@ -104,8 +104,6 @@ section {
   align-items: center;
 }
 .home-img {
-  /* margin-left: 800px;
-  margin-top: -480px; */
   margin-top: 5rem;
   margin-right: -5rem;
   z-index: -1;
@@ -213,40 +211,103 @@ span {
 .btn:hover {
   box-shadow: none;
 }
-
 /* ==========================================
-              About
+              About Section
 =========================================== */
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 4rem 9%;
   background: var(--second-bg-color);
 }
+
 .about-img img {
-  width: 34vw;
+  width: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.heading {
-  text-align: center;
-  font-size: 3.5rem;
+
+.about-content {
+  flex: 1 1 450px;
 }
+
 .about-content h2 {
   text-align: left;
+  font-size: 3rem;
   line-height: 1.2;
+  margin-bottom: 1rem;
 }
-.about-content h3 {
-  font-size: 2.1rem;
-}
+
 .about-content p {
-  font-size: 1.1rem;
-  margin: 2rem 0 3rem;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #ccc;
 }
+
+.subheading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.subheading span {
+  color: var(--main-color, #00e5ff);
+}
+
+.language-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.language-buttons .btn {
+  background: var(--main-color, #00e5ff);
+  color: #0d0d0d;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 15px var(--main-color, #00e5ff);
+  transition: all 0.3s ease;
+}
+
+.language-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px var(--main-color, #00e5ff);
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    text-align: center;
+  }
+
+  .subheading {
+    text-align: center;
+  }
+
+  .language-buttons {
+    justify-content: center;
+  }
+}
+
 
 /* ==========================================
               Services
 =========================================== */
 .services h2 {
+  text-align: center;      
+  font-size: 3.5rem;        
   margin-bottom: 5rem;
 }
 
@@ -304,6 +365,8 @@ span {
 }
 
 .portfolio h2 {
+  text-align: center;     
+  font-size: 3.5rem;        
   margin-bottom: 5rem;
 }
 
@@ -331,7 +394,6 @@ span {
 
 .portfolio-box img {
   width: 100%;
-  /* height: 300px; */
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -411,6 +473,8 @@ span {
               Contact
 =========================================== */
 .contact h2 {
+  text-align: center;       
+  font-size: 3.5rem;        
   margin-bottom: 5rem;
 }
 .contact form {

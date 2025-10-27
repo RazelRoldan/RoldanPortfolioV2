@@ -67,9 +67,37 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
     Typed Js 
 ====================== */
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "Content Creator", "UI/UX Designer"],
+  strings: ["Backend Developer", "UI/UX Designer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
 });
+
+(function () {
+  // your public key from EmailJS
+  emailjs.init("ZnLwSUMz_BSh0Iahj");
+})();
+
+// listen for submit events on the form
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_6sbabrg",  // your Service ID
+      "template_epzpg58", // your Template ID
+      this
+    )
+    .then(
+      () => {
+        alert("✅ Message sent successfully!");
+        this.reset();
+      },
+      (error) => {
+        console.error("❌ Failed to send:", error);
+        alert("❌ Failed to send message. Please try again later.");
+      }
+    );
+});
+
