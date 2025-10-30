@@ -7,9 +7,17 @@
   html {
     font-size: 12.5px;
   }
+  .home-img{
+    margin: auto;
+  }
   .home-img img {
-    margin-top: 8.5rem;
-    margin-right: 20rem;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border: 2px solid lightblue;
+    border-radius: 150px;
+
+
   }
   .home-content h3 {
     font-size: 2.5rem;
@@ -70,10 +78,13 @@
     flex-direction: column-reverse;
   }
   .home-img img {
-    width: 55vw;
-    margin-top: -10rem;
-    margin-left: 18rem;
-    margin-bottom: 0;
+    width: 350px !important;
+    height: 350px !important;
+    object-fit: contain !important;
+    border: 2px solid lightblue !important;
+    border-radius: 150px !important;
+
+
   }
   .home-content {
     margin-top: -15rem;
@@ -208,6 +219,12 @@
     height: 1600px;
     gap: 1.4rem;
   }
+ /* .portfolio-box {
+
+ } */
+ .portfolio-box img{
+  object-fit: content;
+ }
   .contact form .input-box input,
   .contact form textarea {
     font-size: 1rem;
