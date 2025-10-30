@@ -1,11 +1,5 @@
-/* ==========================================
-              Google Fonts
-=========================================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-/* ==========================================
-              Global CSS
-=========================================== */
 * {
   margin: 0;
   padding: 0;
@@ -42,9 +36,6 @@ section {
   padding: 7rem 9% 2rem;
 }
 
-/* ==========================================
-              Header
-=========================================== */
 .header {
   position: fixed;
   top: 0;
@@ -68,10 +59,6 @@ section {
   font-weight: 600;
   cursor: default;
 }
-
-/* ==========================================
-              Navbar
-=========================================== */
 .navbar a {
   font-size: 1.1rem;
   color: var(--text-color);
@@ -94,9 +81,6 @@ section {
   display: none;
 }
 
-/* ==========================================
-              Home
-=========================================== */
 .home {
   display: flex;
   flex-direction: row;
@@ -211,9 +195,6 @@ span {
 .btn:hover {
   box-shadow: none;
 }
-/* ==========================================
-              About Section
-=========================================== */
 .about {
   display: flex;
   justify-content: center;
@@ -300,11 +281,6 @@ span {
     justify-content: center;
   }
 }
-
-
-/* ==========================================
-              Services
-=========================================== */
 .services h2 {
   text-align: center;      
   font-size: 3.5rem;        
@@ -356,10 +332,6 @@ span {
   font-size: 1rem;
   margin: 1rem 0 1.5rem;
 }
-
-/* ==========================================
-              Portfolio
-=========================================== */
 .portfolio {
   background: var(--second-bg-color);
 }
@@ -468,10 +440,6 @@ span {
   font-size: 1.5rem;
   color: var(--second-bg-color);
 }
-
-/* ==========================================
-              Contact
-=========================================== */
 .contact h2 {
   text-align: center;       
   font-size: 3.5rem;        
@@ -517,9 +485,6 @@ span {
   cursor: pointer;
 }
 
-/* ==========================================
-              Footer
-=========================================== */
 .footer {
   display: flex;
   justify-content: space-between;

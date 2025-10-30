@@ -1,6 +1,3 @@
-/* ==================== 
-  toggle icon navbar 
-====================== */
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -9,9 +6,6 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-/* =========================== 
-    Scroll Section Active Link 
-============================= */
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
@@ -32,22 +26,13 @@ window.onscroll = () => {
     }
   });
 
-  /* ========================
-      Sticky Navbar 
-=========================== */
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 100);
 
-  /* ===================== 
-    Menu Icon Navbar 
-====================== */
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
 
-/* ===================== 
-    Scroll Reveal 
-====================== */
 ScrollReveal({
   reset: true,
   distance: "80px",
@@ -63,9 +48,6 @@ ScrollReveal().reveal(
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
-/* ===================== 
-    Typed Js 
-====================== */
 const typed = new Typed(".multiple-text", {
   strings: ["Backend Developer", "UI/UX Designer"],
   typeSpeed: 100,
@@ -75,18 +57,16 @@ const typed = new Typed(".multiple-text", {
 });
 
 (function () {
-  // your public key from EmailJS
   emailjs.init("ZnLwSUMz_BSh0Iahj");
 })();
 
-// listen for submit events on the form
 document.getElementById("contact-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
   emailjs
     .sendForm(
-      "service_6sbabrg",  // your Service ID
-      "template_epzpg58", // your Template ID
+      "service_6sbabrg",
+      "template_epzpg58",
       this
     )
     .then(
